@@ -1,0 +1,5 @@
+require('bam.general')
+require('bam.mappings')
+require('bam.options')
+require('bam.treesitter')
+require('bam.plugins')
