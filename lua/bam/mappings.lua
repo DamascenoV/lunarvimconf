@@ -1,5 +1,6 @@
 -- DISABLED
 lvim.builtin.which_key.mappings['f'] = {}
+lvim.builtin.which_key.mappings['e'] = {}
 
 -- LEADER
 lvim.leader = "space"
@@ -19,6 +20,7 @@ lvim.keys.normal_mode["-"] = '<C-x>' -- Decrement
 lvim.keys.normal_mode["<C-n>"] = "<cmd>lua require'lir.float'.toggle()<CR>" -- Float Tree
 lvim.keys.normal_mode["<tab>"] = "<cmd>BufferLineCycleNext<CR>" -- Buffer Next
 lvim.keys.normal_mode["<S-tab>"] = "<cmd>BufferLineCyclePrev<CR>" -- Buffer Prev
+lvim.keys.normal_mode["<leader>x"] = "<cmd>BufferKill<CR>" -- Buffer Prev
 
 -- INSERT MODE
 lvim.keys.insert_mode["jj"] = "<ESC>" -- Back Normal Mode

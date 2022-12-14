@@ -6,6 +6,7 @@ lvim.plugins = {
     "glepnir/lspsaga.nvim"
   },
   {
-    "stevearc/aerial.nvim"
+    "stevearc/aerial.nvim",
+         config = function() require('plugins.aerial') end
   }
 }
