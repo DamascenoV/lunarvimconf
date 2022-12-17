@@ -11,6 +11,9 @@ lvim.keys.normal_mode["dw"] = 'vb"_d' -- Delete word backawards
 lvim.keys.normal_mode["<C-a>"] = 'gg<S-v>G' -- Select all
 lvim.keys.normal_mode["<leader>fw"] = '<cmd>Telescope live_grep<CR>' -- Find word
 lvim.keys.normal_mode["<leader>ff"] = '<cmd>Telescope find_files<CR>' -- Find files
+lvim.keys.normal_mode["<leader>fo"] = '<cmd>Telescope oldfiles<CR>' -- Recent files
+lvim.keys.normal_mode["<leader>fp"] = '<cmd>Telescope projects<CR>' -- Telescope projects
+lvim.keys.normal_mode["<leader>fb"] = '<cmd>Telescope buffers<CR>' -- Telescope buffers files
 lvim.keys.normal_mode["gp"] = '<cmd>Lspsaga peek_definition<CR>' -- Preview Definition
 lvim.keys.normal_mode["gh"] = '<cmd>Lspsaga lsp_finder<CR>' -- References
 lvim.keys.normal_mode["gr"] = '<cmd>Lspsaga rename<CR>' -- Rename
@@ -21,9 +24,13 @@ lvim.keys.normal_mode["<C-n>"] = "<cmd>lua require'lir.float'.toggle()<CR>" -- F
 lvim.keys.normal_mode["<tab>"] = "<cmd>BufferLineCycleNext<CR>" -- Buffer Next
 lvim.keys.normal_mode["<S-tab>"] = "<cmd>BufferLineCyclePrev<CR>" -- Buffer Prev
 lvim.keys.normal_mode["<leader>x"] = "<cmd>BufferKill<CR>" -- Buffer Prev
+lvim.keys.normal_mode["<leader><C-l>"] = "viwoconsole.log('<ESC>pa:', <ESC>pa)<ESC>" -- Buffer Prev
 
 -- INSERT MODE
 lvim.keys.insert_mode["jj"] = "<ESC>" -- Back Normal Mode
+
+-- VISUAL MODE
+lvim.keys.normal_mode["<leader><C-l>"] = "yoconsole.log('<ESC>pa:', <ESC>pa)<ESC>" -- Buffer Prev
 
 lvim.builtin.telescope.on_config_done = function()
   local actions = require "telescope.actions"
