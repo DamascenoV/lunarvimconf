@@ -6,10 +6,6 @@ lvim.plugins = {
     "glepnir/lspsaga.nvim"
   },
   {
-    "stevearc/aerial.nvim",
-         config = function() require('aerial').setup() end
-  },
-  {
     "f-person/git-blame.nvim",
         config = function ()
             vim.cmd "highlight default link gitblame SpecialComment"
